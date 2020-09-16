@@ -1,14 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+{%  extends 'accounts/main.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashbord - CRM</title>
-</head>
+{% block content %}
 
-<body>
-    <h1>This is Products.</h1>
-</body>
+		<br>
 
-</html>
+		<div class="row">
+			<div class="col-md">
+				<div class="card card-body">
+					<h5>Products</h5>
+				</div>
+				<div class="card card-body">
+					<table class="table">
+						<tr>
+							<th>Product</th>
+							<th>Category</th>
+							<th>Price</th>
+						</tr>
+						
+					</table>
+				</div>
+			</div>
+			
+		</div>
+
+{% endblock content %}
