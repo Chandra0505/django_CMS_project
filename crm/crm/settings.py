@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'uh3p@%u(8qq-dlud_)q3s9w_dtm&ygox*8-mind#+_e&h8*@z2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['chandra-crm.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'accounts',
+
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -76,12 +78,39 @@ WSGI_APPLICATION = 'crm.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+
+'''
+STEPS FOR DJANGO POSTGRESQL DATABASE + AWS RDS
+1 - Download and install PostgreSQL & PG Admin
+2 - Login to PG admin & Create Database
+3 - Connect database to Django App & run migrations
+4 - Create database on AWS
+5 - Connect to live AWS Database with PG admin & Django
+'''
+'''
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'DEMO_TEST',
+        'USER':'postgres',
+        'PASSWORD':'jai@12345',
+        'HOST':'localhost',
+        'PORT':'5432'
+    }
+}
+
+'''
+
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
 
 
 # Password validation
