@@ -1,13 +1,13 @@
 # django_CMS_project
 
-## Soon this project will be live at: [a link](https://chandra-crm.herokuapp.com/)
+## Soon this project will be live at: [Chandra CRM](https://chandra-crm.herokuapp.com/)
 
-## The aim of this projec is to learn the concpts of djanog. The following are the learning from this project.
+## The aim of this projec is to learn the concpts of Djanog. The following are the learning from this project.
 
-[1.] What is MVT architecture?  
-[2.] How this architecture works?  
-[3.] How use django filters.  
-[4.] Use of admin panel of django.
+[1] What is MVT architecture?  
+[2] How this architecture works?  
+[3] How use django filters.  
+[4] Use of admin panel of django.
 
 # Some images of this project:
 
@@ -33,5 +33,5 @@
 
 ## Task to do:
 
-[1.] Deploy with the help of doker.  
-[2.] Improve customer profiles.
+[1] Deploy with the help of doker.  
+[2] Improve customer profiles.
